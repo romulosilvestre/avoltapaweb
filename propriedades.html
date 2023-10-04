@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lição 01</title>
+
+    <style>
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <h5>Planeta Alien</h5>
+    <p>
+        A exploração do planeta Alien necessita não apenas de TAGS. É importante explorar propriedades.
+        As propriedades "value" e "innerText" são as mais utilizadas.
+        A propriedade "value" obtém ou altera o conteúdo de um campo de formulário HTML.
+        Portanto, para obter o nome do usuário informado,é preciso utilizar essa propriedade.
+        Já a propriedade innerText, serve para alterar ou obter o conteúdo de elementos de texto do documento
+        identificados no código HTML.
+        É possível, portanto, alterar o texto de qualquer parágrafo ou texto de cabeçalho em uma página web
+        Utilizando essa propriedade.
+        Há também a propriedade innerHTML, semelhantemente, a innerText, porém, renderiza os códigos HTML existentes
+        no seu conteúdo.
+    </p>
+
+    <img src="" id="minhaImagem">
+    <button onclick="mostrarImagem()">chamar caminhão espacial</button>
+
+    <script>
+
+        function mostrarImagem() {
+            var imagem = document.getElementById("minhaImagem");
+            // Defina o atributo src da imagem com o URL da imagem desejada
+            imagem.src = "img/innertext.jpeg";
+
+            var p = document.querySelector("p")
+            p.innerText = "Consulta ou altera o texto exibido por elementos HTML como parágrafos (p), cabeçahos entre outros"
+        }
+
+    </script>
+
+</body>
+
+</html>

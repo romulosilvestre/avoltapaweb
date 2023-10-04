@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Game</title>
+</head>
+<body>    
+    <img id="imagem" src="img/doctype.jpeg" width="35%" height="25%">
+    <script>
+        //declarando saída de dados e mostrando no navegador
+        //saída de dados em janela popup.
+        alert("Bem-Vindo Ao Planeta Alien")
+        console.log("testando no navegador")        
+        //DOM com a imagem
+        var img = document.getElementById("imagem")
+        //adicionando evento click
+        img.addEventListener("click",mostrar);              
+        function mostrar() {
+            //definindo variáveis e constantes
+            var resp = prompt("Para que serve a tag <!DOCTYPE html> ?")
+            alert(`Sua resposta foi: ${resp} ! A resposta é essa: tag que serve para definir a versão do HTML que você esta utilizando.`)
+        }
+    </script>
+</body>
+</html>
